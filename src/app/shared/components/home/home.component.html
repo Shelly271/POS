@@ -11,15 +11,15 @@
         </div>
     </div>
 
-    <form >
+    <form [formGroup]="form" (ngSubmit)="submit()">
         <div class="row">
-            <input type="text" placeholder="0.00" class="amount">
+            <input type="text" placeholder="0.00" class="amount" formControlName="amount">
             <div class="buttons">
                 <div class="col-6">
                     <input type="button" value="FEED PAPER" class="btn">
                 </div>
                 <div class="col-6">
-                    <input type="button" value="SUBMIT" class="btn">
+                    <input type="submit" value="Pay"id="payBtn" class="btn">
                 </div>
             </div>
         </div>

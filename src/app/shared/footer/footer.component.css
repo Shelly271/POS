@@ -1,0 +1,17 @@
+.footer{
+    flex: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 98%;
+    height: 1px;
+    top: 97%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    
+}

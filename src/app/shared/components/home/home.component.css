@@ -1,0 +1,119 @@
+.container {
+    flex: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heard {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 3%;
+    width: 100%;
+    position: absolute;
+    width: 90%;
+    align-self: center;
+    height: 54px;
+    left: 7px;
+    top: 73px;
+    background: #438D92;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+#tooglebtn1 {
+    border-radius: 12px 0px 0px 12px;
+}
+
+
+#tooglebtn2 {
+    border-radius: 0px 12px 12px 0px;
+}
+
+.tooglebtn {
+    width: 45%;
+    background-color: #0B666A;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: none;
+}
+
+.tooglebtn:hover {
+    background-color: white;
+    color: green;
+    border: none;
+    padding: 15px 32px;
+}
+
+.logo {
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: #0B666A;
+    border-radius: 50px;
+    border: none !important;
+
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    margin-top:35%;
+    margin-left: 20%;
+    padding-left:  3%;
+    height: 200px;
+    width: 60%;
+    background-color: #438D92;
+    border-radius: 12px;    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    padding-top: 15px;
+}
+.btn{  
+border-radius: 12px;
+font-size: larger;
+padding-left: 12%;
+background-color: #0B666A;
+color: aliceblue;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+width: 120%;
+margin-left: 2%;
+border: none;
+height: 40px;
+}
+ .btn:hover{
+background-color: #ffffff;
+color: #0B666A;
+}
+.amount{
+outline: none;
+border-radius: 12px;
+font-size: larger;
+padding-left: 12%;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border: none;
+height: 40px;
+}

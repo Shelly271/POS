@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   admin() {
     this.home = false;
     this.sideNav = true;
-    this.menuItem = [{ key: 1, value: 'Operator', link: 'https://www.figma.com/file/aCpxeWfInHlJwEoSrMwJSe/Terminal?type=design&node-id=0-1&mode=design&t=GhxR1nRWDwVQmlJh-0' },
+    this.menuItem = [{ key: 1, value: 'Cash and Sale', link: 'https://www.figma.com/file/aCpxeWfInHlJwEoSrMwJSe/Terminal?type=design&node-id=0-1&mode=design&t=GhxR1nRWDwVQmlJh-0' },
     { key: 2, value: 'Report ', link: 'www.facebook.com' },
     { key: 3, value: 'Manager', link: 'www.zoom.com' },
     { key: 4, value: 'Suport', link: 'www.figma.com' },

@@ -3,7 +3,17 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-items: center;
     justify-content: center;
+    animation: fadeIn 5s;
+}
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .heard {
@@ -70,6 +80,7 @@
 form {
     display: flex;
     justify-content: space-between;
+    align-self: center;
     flex-direction: row;
     padding-top: 35px;
     margin-top: 35%;
@@ -132,45 +143,56 @@ form {
     top: 74px;
     background: #438D92;
     padding-top: 3%;
-    display:block !important;
-    transition: width .75s ease;
+    display: block !important;
+    animation: backwards;
+    animation: fadeIn 5s;
 }
 
-.sideNav:hover {
-    /* width: 300px; */
+.sideNav a ul ol {
+    width: 250px;
+    height: 43px;
+    margin-top: 3%;
+    background: rgba(217, 217, 217, 0.5022);
+    border-radius: 12px;
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    /* justify-content:baseline; */
+    align-items: center;
+    padding-left: 1px;
+    text-decoration: none;
 }
-.sideNav a ul ol{
-width: 250px;
-height: 43px;
-margin-top: 3%;
-background: rgba(217, 217, 217, 0.5022);
-border-radius: 12px;
-color:aliceblue;
-font-size:larger;
-display: flex;
-/* justify-content:baseline; */
-align-items: center;
-padding-left: 1px;
-text-decoration:none;
+.sideNav a ul ol:hover {
+    background: rgba(145, 145, 145, 0.502);
+    border-radius: 12px;
+    color: aliceblue;
 }
-a{
-text-decoration: none;
+
+a {
+    text-decoration: none;
 }
-.homeBtn{
-width: 100px;
-height: 40px;
-left: 216px;
-top: 85px;
-border: none;
-background: #0B666A;
-color: #ffffff;
-font-size: larger;
-border-radius: 12px;
-margin-right: 2%;
-margin-left: 65%;
- 
+
+.homeBtn {
+    width: 100px;
+    height: 40px;
+    left: 216px;
+    top: 85px;
+    border: none;
+    background: #0B666A;
+    color: #ffffff;
+    font-size: larger;
+    border-radius: 12px;
+    margin-right: 2%;
+    margin-left: 65%;
+
 }
-.icon{
+
+.homeBtn:hover {
+    color: #0B666A;
+    background: #ffffff;
+}
+
+.icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,5 +206,5 @@ margin-left: 65%;
     border-radius: 12px;
     margin-left: 1%;
     margin-right: 2%;
-     
-    }
+
+}

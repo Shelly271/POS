@@ -12,20 +12,17 @@
     </div>
 
     <form [formGroup]="form" (ngSubmit)="submit()">
-        <div class="row">
-            <input type="text" placeholder="0.00" class="amount" formControlName="amount">
+        <div class="screen">
+            <input type="text" placeholder="0.00" class="amount" formControlName="amount" (focus)="keyboard()">
             <div class="buttons">
-                <div class="col-6">
-                    <input type="button" value="FEED PAPER" class="btn">
-                </div>
-                <div class="col-6">
-                    <input type="submit" value="Pay" id="payBtn" class="btn">
-                </div>
+                <input type="button" value="FEED PAPER" id="feedPaper" class="btn">
+                <input type="submit" value="Pay" id="payBtn" class="btn">
             </div>
         </div>
+        <!-- *ngIf="showKeyboard" -->
+        <app-keyboard ></app-keyboard>
 
     </form>
-
 </div>
 <div class="sideNav" *ngIf="sideNav">
     <input class="homeBtn" type="button" value="Home" (click)="back()">

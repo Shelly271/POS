@@ -11,7 +11,11 @@ export class HomeComponent implements OnInit {
   menuItem: any[] = [];
   home: boolean = true;
   sideNav: boolean = false
+  showKeyboard: boolean = false;
   constructor(private formBuilder: FormBuilder) {
+  }
+  keyboard() {
+    this.showKeyboard = true;
   }
   back() {
     this.home = true;

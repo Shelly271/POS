@@ -8,6 +8,7 @@ import { ComponentsComponent } from './shared/components/components.component';
 import { HomeComponent } from './shared/components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { KeyboardComponent } from './shared/components/keyboard/keyboard.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HeaderComponent,
     ComponentsComponent,
-    HomeComponent
+    HomeComponent,
+    KeyboardComponent
   ],
   imports: [
     BrowserModule,

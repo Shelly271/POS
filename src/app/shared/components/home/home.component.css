@@ -123,3 +123,66 @@ form {
     border: none;
     height: 50px;
 }
+
+.sideNav {
+    position: absolute;
+    width: 346px;
+    height: 87%;
+    left: 0px;
+    top: 74px;
+    background: #438D92;
+    padding-top: 3%;
+    display:block !important;
+    transition: width .75s ease;
+}
+
+.sideNav:hover {
+    /* width: 300px; */
+}
+.sideNav a ul ol{
+width: 250px;
+height: 43px;
+margin-top: 3%;
+background: rgba(217, 217, 217, 0.5022);
+border-radius: 12px;
+color:aliceblue;
+font-size:larger;
+display: flex;
+/* justify-content:baseline; */
+align-items: center;
+padding-left: 1px;
+text-decoration:none;
+}
+a{
+text-decoration: none;
+}
+.homeBtn{
+width: 100px;
+height: 40px;
+left: 216px;
+top: 85px;
+border: none;
+background: #0B666A;
+color: #ffffff;
+font-size: larger;
+border-radius: 12px;
+margin-right: 2%;
+margin-left: 65%;
+ 
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    top: 85px;
+    border: none;
+    background: #0B666A;
+    color: #ffffff;
+    border-radius: 12px;
+    margin-left: 1%;
+    margin-right: 2%;
+     
+    }

@@ -1,10 +1,10 @@
 <app-header></app-header>
 
-<div class="container">
+<div class="container" *ngIf="home">
     <div class="heard">
         <div class="col-4">
-            <input type="button" class="tooglebtn" id="tooglebtn1" value="Admin">
-            <input type="button" class="tooglebtn" id="tooglebtn2" value="Cashier">
+            <input type="button" class="tooglebtn" id="tooglebtn1" value="Admin" (click)="admin()">
+            <input type="button" class="tooglebtn" id="tooglebtn2" value="Cashier" (click)="cashier()">
         </div>
         <div class="col-4">
             <input type="button" class="logo" value="LOGO">
@@ -19,11 +19,29 @@
                     <input type="button" value="FEED PAPER" class="btn">
                 </div>
                 <div class="col-6">
-                    <input type="submit" value="Pay"id="payBtn" class="btn">
+                    <input type="submit" value="Pay" id="payBtn" class="btn">
                 </div>
             </div>
         </div>
-        
+
     </form>
 
+</div>
+<div class="sideNav" *ngIf="sideNav">
+    <input class="homeBtn" type="button" value="Home" (click)="back()">
+    <div *ngFor="let item of menuItem">
+        <a href="{{item.link}}">
+            <ul>
+                <ol>
+                    <div class="icon">
+                        <p>{{item.key}}</p>
+                    </div>
+                    <p>{{item.value}}</p>
+                </ol>
+
+            </ul>
+
+        </a>
+    </div>
+    <app-footer></app-footer>
 </div>

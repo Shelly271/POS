@@ -123,3 +123,75 @@ form {
     border: none;
     height: 50px;
 }
+.admin-menu{
+    flex: 0;
+    flex-direction: row;
+    position: absolute;
+    width: 81%;
+    height: 89%;
+    left: 0px;
+    top: 11%;
+    background: #438D92;
+}
+.home{
+    flex: 0;
+    flex-direction: row;
+    border: #418383;
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    top: 13px;
+    left: 71%;
+    background: #0B666A;
+    border-radius: 11px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFF0F5;
+}
+.operatormenu{
+    /* flex:0;
+    position: absolute; */
+    width: 172px;
+ /* Rectangle 39 */
+    height: 43px;
+    left: 10px;
+    top: 10px;
+    border: none;
+    background: rgba(217, 217, 217, 0.5022);
+    border-radius: 12px;
+
+
+/* Operator Menu */
+
+/* position: absolute; */
+
+height: 29px;
+left: 59px;
+top: 174px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height 
+
+color: #000000;
+
+
+
+ Rectangle 43 
+
+position: absolute;
+width: 33px;
+height: 33px;
+left: 17px;
+top: 172px;
+
+background: #878F96;
+border-radius: 12px; */
+
+}

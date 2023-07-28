@@ -12,10 +12,22 @@ export class HomeComponent implements OnInit {
   home: boolean = true;
   sideNav: boolean = false
   showKeyboard: boolean = false;
+  numericValue: number = 0.00;
   constructor(private formBuilder: FormBuilder) {
   }
-  keyboard() {
+  keyboard() {  
     this.showKeyboard = true;
+  }
+ 
+
+  addValue(value: number) {
+   if (value < 0){
+    this.showKeyboard = false;
+   }else{
+    this.numericValue = value;
+   }
+    
+    // console.log('Numeric Value in Parent:', this.numericValue);
   }
   back() {
     this.home = true;
@@ -41,14 +53,17 @@ export class HomeComponent implements OnInit {
   }
   formBinding() {
     this.form = this.formBuilder.group({
-      amount: ['']
+      amount: []
     });
   }
   ngOnInit(): void {
     this.formBinding();
+   
   }
 
   submit() {
+    console.log(this.numericValue)
+      this.form.value.amount = (this.numericValue)
     alert(this.form.value.amount)
   }
 }

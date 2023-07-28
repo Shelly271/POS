@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-keyboard',
@@ -6,11 +6,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./keyboard.component.css']
 })
 export class KeyboardComponent {
+  // screenValue: string = "";
+  // numericValue: number = 0
+  // onButtonClick(value: number) {
+  //   this.screenValue = this.screenValue + value.toString();
+  //   this.numericValue = parseFloat(this.screenValue);
+  // }
+  // cancel() {
+  //   this.screenValue = this.screenValue.slice(0, -1); 
+  //   this.numericValue = parseFloat(this.screenValue);
+  // }
+  @Output() onKeyboardInput: EventEmitter<number> = new EventEmitter<number>();
+
   screenValue: string = "";
-  numericValue: number = 0
-  onButtonClick(value: number) {
+  numericValue: number = 0;
+ close: boolean = false;
+  OnButtonClick(value: number) {
     this.screenValue = this.screenValue + value.toString();
     this.numericValue = parseFloat(this.screenValue);
+    this.onKeyboardInput.emit(this.numericValue);
   }
 
+  Cancel() {
+    this.screenValue = this.screenValue.slice(0, -1);
+    this.numericValue = parseFloat(this.screenValue);
+    this.onKeyboardInput.emit(this.numericValue);
+  }
+  
+  Close() {
+    this.close = true;
+  }
+  
 }

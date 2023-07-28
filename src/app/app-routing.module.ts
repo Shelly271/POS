@@ -6,7 +6,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { OperatorMenuComponent } from './shared/components/operator-menu/operator-menu.component';
 
 const routes: Routes = [{
-  path: '', component: OperatorMenuComponent},
+  path: 'rt6', component: OperatorMenuComponent},
   {
     path: '',
     component: HomeComponent,children:[

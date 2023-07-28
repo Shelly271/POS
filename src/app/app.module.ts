@@ -8,6 +8,8 @@ import { ComponentsComponent } from './shared/components/components.component';
 import { HomeComponent } from './shared/components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { OperatorMenuComponent } from './shared/components/operator-menu/operator-menu.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HeaderComponent,
     ComponentsComponent,
-    HomeComponent
+    HomeComponent,
+    OperatorMenuComponent,
   ],
   imports: [
     BrowserModule,

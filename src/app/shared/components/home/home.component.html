@@ -10,22 +10,19 @@
             <input type="button" class="logo" value="LOGO">
         </div>
     </div>
-
     <form [formGroup]="form" (ngSubmit)="submit()">
-        <div class="row">
-            <input type="text" placeholder="0.00" class="amount" formControlName="amount">
+        <div class="screen">
+            <input type="number" min="1" max="100000000000000" placeholder="0.00" class="amount" formControlName="amount" value={{numericValue}} (focus)="keyboard()">
             <div class="buttons">
-                <div class="col-6">
-                    <input type="button" value="FEED PAPER" class="btn">
-                </div>
-                <div class="col-6">
-                    <input type="submit" value="Pay" id="payBtn" class="btn">
-                </div>
+                <input type="button" value="FEED PAPER" id="feedPaper" class="btn">
+                <input type="submit" value="Pay" id="payBtn" class="btn">
             </div>
         </div>
+         
+        <app-keyboard *ngIf="showKeyboard" (onKeyboardInput)="addValue($event)"></app-keyboard>
+        <app-footer *ngIf="!showKeyboard"></app-footer>
 
     </form>
-
 </div>
 <div class="sideNav" *ngIf="sideNav">
     <input class="homeBtn" type="button" value="Home" (click)="back()">

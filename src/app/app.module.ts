@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { OperatorMenuComponent } from './shared/components/operator-menu/operator-menu.component';
 
+import { KeyboardComponent } from './shared/components/keyboard/keyboard.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { OperatorMenuComponent } from './shared/components/operator-menu/operato
     ComponentsComponent,
     HomeComponent,
     OperatorMenuComponent,
+    KeyboardComponent
   ],
   imports: [
     BrowserModule,

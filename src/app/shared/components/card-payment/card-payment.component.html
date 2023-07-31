@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="screens">
+        <div>
+            <input type="text" class="amount" value={{amount}} disabled/>
+            <p>INSERT/SWIPE OR TAP</p>
+        </div>
+    </div>
+</div>
+
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="container">
+        <div class="screen">
+            <div>
+                <input type="number" minlength="1" maxlength="5" formControlName="pin" placeholder="Enter your PIN"
+                    class="pin" (focus)="keyboard()" value="{{pin}}" />
+                <div class="buttons">
+                    <input type="submit" value="Pay" id="payBtn" class="btn">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <app-keyboard *ngIf="showKeyboard" (onKeyboardInput)="addValue($event)"></app-keyboard>
+    <app-footer *ngIf="!showKeyboard"></app-footer>
+
+</form>

@@ -9,6 +9,8 @@ import { HomeComponent } from './shared/components/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { KeyboardComponent } from './shared/components/keyboard/keyboard.component';
+import { CardPaymentComponent } from './shared/components/card-payment/card-payment.component';
+import { SaleAndCashComponent } from './shared/components/sale-and-cash/sale-and-cash.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { KeyboardComponent } from './shared/components/keyboard/keyboard.compone
     HeaderComponent,
     ComponentsComponent,
     HomeComponent,
-    KeyboardComponent
+    KeyboardComponent,
+    CardPaymentComponent,
+    SaleAndCashComponent
   ],
   imports: [
     BrowserModule,

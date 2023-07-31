@@ -1,29 +1,45 @@
 <app-header></app-header>
 
-<div class="container">
+<div class="container" *ngIf="home">
     <div class="heard">
         <div class="col-4">
-            <input type="button" class="tooglebtn" id="tooglebtn1" value="Admin">
-            <input type="button" class="tooglebtn" id="tooglebtn2" value="Cashier">
+            <input type="button" class="tooglebtn" id="tooglebtn1" value="Admin" (click)="admin()">
+            <input type="button" class="tooglebtn" id="tooglebtn2" value="Cashier" (click)="cashier()">
         </div>
         <div class="col-4">
             <input type="button" class="logo" value="LOGO">
         </div>
     </div>
-
-    <form >
-        <div class="row">
-            <input type="text" placeholder="0.00" class="amount">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="screen">
+            <input type="number" min="1" max="10000" placeholder="0.00" class="amount" formControlName="amount" value={{numericValue}} (focus)="keyboard()">
             <div class="buttons">
-                <div class="col-6">
-                    <input type="button" value="FEED PAPER" class="btn">
-                </div>
-                <div class="col-6">
-                    <input type="button" value="SUBMIT" class="btn">
-                </div>
+                <input type="button" value="FEED PAPER" id="feedPaper" class="btn" (click)="feedPaper()"/>
+                <input type="submit" value="Pay" id="payBtn" class="btn">
+                
             </div>
         </div>
-        
-    </form>
+         
+        <app-keyboard *ngIf="showKeyboard" (onKeyboardInput)="addValue($event)"></app-keyboard>
+        <app-footer *ngIf="!showKeyboard"></app-footer>
 
+    </form>
+</div>
+<div class="sideNav" *ngIf="sideNav">
+    <input class="homeBtn" type="button" value="Home" (click)="back()">
+    <div *ngFor="let item of menuItem">
+        <a routerLink="{{item.link}}">
+            <ul>
+                <ol>
+                    <div class="icon">
+                        <p>{{item.key}}</p>
+                    </div>
+                    <p>{{item.value}}</p>
+                </ol>
+
+            </ul>
+
+        </a>
+    </div>
+    <app-footer></app-footer>
 </div>

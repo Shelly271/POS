@@ -5,6 +5,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { SaleAndCashComponent } from './shared/components/sale-and-cash/sale-and-cash.component';
 import { CardPaymentComponent } from './shared/components/card-payment/card-payment.component';
+import { OperatorMenuComponent } from './shared/components/operator-menu/operator-menu.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,9 @@ const routes: Routes = [
   {
     path: 'footer', component: FooterComponent,
 
+  },
+  {
+    path: 'operator', component:OperatorMenuComponent
   }
 
 ];

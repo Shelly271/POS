@@ -48,10 +48,10 @@ export class HomeComponent implements OnInit {
   } admin() {
     this.home = false;
     this.sideNav = true;
-    this.menuItem = [{ key: 1, value: 'Cash and Sale', link: 'cashAndSale' },
-    { key: 2, value: 'Report ', link: 'report' },
-    { key: 3, value: 'Manager', link: 'manager' },
-    { key: 4, value: 'Suport', link: 'suport' },
+    this.menuItem = [{ key: 1, value: 'Operator Menu', link: 'operator' },
+    { key: 2, value: 'Report Menu', link: 'report' },
+    { key: 3, value: 'Manager Menu', link: 'manager' },
+    { key: 4, value: 'Suport Menu', link: 'suport' },
     ]
   } cashier() {
     this.home = false;

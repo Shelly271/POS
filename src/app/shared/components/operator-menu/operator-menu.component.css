@@ -23,20 +23,9 @@
     top: 77px;
     background: #438D92;
     margin: 1px;
-    /* display: flex;
-    justify-content: space-around;
-    margin: 5%;
-    gap: 1rem;
-    background-color:#438D92; */
 }
 
 
-/* .col-3{
-    height: 60px;
-    width: 120px;
-    background-color: aqua;
-    
-} */
 img {
     top: 70px;
     justify-content: center;
@@ -47,21 +36,20 @@ img {
 
 }
 
-.operator_menu {   
+.operator_menu {  
     display: flex;
-    justify-content: space-around;
-    gap: 6px;
-    background-color:#438D92;
-    margin: 15px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;   
 }
-
 .btn_btn_primary {
-    background: rgba(217, 217, 217, 0.7922);
+   background: rgba(217, 217, 217, 0.7922);
     border-radius: 5px;
     border: #D9D9D9;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 14px;
+    height:55% ;
+    width: 22%;
 }
+.btn_btn_primary:hover {
+    background: #D9D9D9;
+}
+

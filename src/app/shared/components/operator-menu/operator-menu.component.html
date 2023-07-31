@@ -1,15 +1,24 @@
 <app-header></app-header>
+
 <div class="container">
     <div class="row">
         <div class="operator_menu">
             <input class="btn_btn_primary" type="button" value="Manual Entry">
-            <input class="btn_btn_primary" type="button" value="Reprint">
+            <select name="" id="" class="btn_btn_primary">
+                <option value="">Reprint</option>
+                <option value="">Last Transaction</option>
+                <option value="">Specific Reprint</option>
+            </select>
             <input class="btn_btn_primary" type="button" value="Batch Upload">
-            <input class="btn_btn_primary" type="button" value="P. Update">
+            <select name="" id="" class="btn_btn_primary">
+                <option value="">P. Update</option>
+                <option value="">Partial</option>
+                <option value="">Full</option>
+            </select>
         </div>
     </div>
     <div class="imgContainer">
-        <img [src]="imageUrl" alt=""/>
+        <img [src]="imageUrl" alt="" />
     </div>
 </div>
 <app-footer></app-footer>

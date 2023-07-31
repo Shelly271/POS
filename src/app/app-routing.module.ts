@@ -5,8 +5,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { OperatorMenuComponent } from './shared/components/operator-menu/operator-menu.component';
 
-const routes: Routes = [{
-  path: 'rt6', component: OperatorMenuComponent},
+const routes: Routes = [
   {
     path: '',
     component: HomeComponent,children:[
@@ -15,6 +14,10 @@ const routes: Routes = [{
       {
         path: 'footer',
         component: FooterComponent},
+        {
+          path: 'operator-menu',
+          component: OperatorMenuComponent}
+        
       
     ]
   }

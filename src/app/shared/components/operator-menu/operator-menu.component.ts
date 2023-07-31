@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-operator-menu',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class OperatorMenuComponent {
   imageUrl: string='assets/Nedbank_logo_cube.png';
-  
+  @Input() dataFromHome: string;
 }

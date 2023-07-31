@@ -17,10 +17,10 @@
                 <input type="button" value="FEED PAPER" id="feedPaper" class="btn">
                 <input type="submit" value="Pay" id="payBtn" class="btn">
             </div>
-        </div>
-         
+        </div>     
         <app-keyboard *ngIf="showKeyboard" (onKeyboardInput)="addValue($event)"></app-keyboard>
         <app-footer *ngIf="!showKeyboard"></app-footer>
+        
 
     </form>
 </div>

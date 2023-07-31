@@ -1,0 +1,12 @@
+<!--  (focus)="keyboard()" -->
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="screen">
+        <input type="number" min="1" max="10000" value={{saleAmount}} placeholder="Enter Sale Amount" class="amount" formControlName="saleAmount" (focus)="keyboard()" >
+        <input type="number" min="1" max="10000" value={{cashAmount}} placeholder="Enter Cash Amount" class="amount" formControlName="cashAmount" (focus)="keyboard()">
+        <input type="submit" value="Submit" class="btn">   
+    </div>
+
+    <app-keyboard *ngIf="showKeyboard" (onKeyboardInput)="addValue($event)"></app-keyboard>
+    <app-footer *ngIf="!showKeyboard" ></app-footer>
+
+</form>

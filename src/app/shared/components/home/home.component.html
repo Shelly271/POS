@@ -12,10 +12,11 @@
     </div>
     <form [formGroup]="form" (ngSubmit)="submit()">
         <div class="screen">
-            <input type="number" min="1" max="100000000000000" placeholder="0.00" class="amount" formControlName="amount" value={{numericValue}} (focus)="keyboard()">
+            <input type="number" min="1" max="10000" placeholder="0.00" class="amount" formControlName="amount" value={{numericValue}} (focus)="keyboard()">
             <div class="buttons">
-                <input type="button" value="FEED PAPER" id="feedPaper" class="btn">
+                <input type="button" value="FEED PAPER" id="feedPaper" class="btn" (click)="feedPaper()"/>
                 <input type="submit" value="Pay" id="payBtn" class="btn">
+                
             </div>
         </div>     
         <app-keyboard *ngIf="showKeyboard" (onKeyboardInput)="addValue($event)"></app-keyboard>
@@ -27,7 +28,7 @@
 <div class="sideNav" *ngIf="sideNav">
     <input class="homeBtn" type="button" value="Home" (click)="back()">
     <div *ngFor="let item of menuItem">
-        <a href="{{item.link}}">
+        <a routerLink="{{item.link}}">
             <ul>
                 <ol>
                     <div class="icon">

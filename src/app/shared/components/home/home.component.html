@@ -21,8 +21,6 @@
         </div>     
         <app-keyboard *ngIf="showKeyboard" (onKeyboardInput)="addValue($event)"></app-keyboard>
         <app-footer *ngIf="!showKeyboard"></app-footer>
-        
-
     </form>
 </div>
 <div class="sideNav" *ngIf="sideNav">

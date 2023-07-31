@@ -6,10 +6,14 @@ import { HeaderComponent } from './shared/header/header.component';
 import { SaleAndCashComponent } from './shared/components/sale-and-cash/sale-and-cash.component';
 import { CardPaymentComponent } from './shared/components/card-payment/card-payment.component';
 import { OperatorMenuComponent } from './shared/components/operator-menu/operator-menu.component';
+import { PreAuthCompletionComponent } from './shared/components/pre-auth-completion/pre-auth-completion.component';
 
 const routes: Routes = [
   {
-    path: '', component: HomeComponent 
+    path: '', component: PreAuthCompletionComponent
+  },
+  {
+    path: 'home', component: HomeComponent 
   },
   {
     path: 'pay', component: CardPaymentComponent
@@ -27,7 +31,8 @@ const routes: Routes = [
   },
   {
     path: 'operator', component:OperatorMenuComponent
-  }
+  },
+  
 
 ];
 

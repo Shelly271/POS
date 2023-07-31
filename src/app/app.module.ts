@@ -13,6 +13,7 @@ import { OperatorMenuComponent } from './shared/components/operator-menu/operato
 import { KeyboardComponent } from './shared/components/keyboard/keyboard.component';
 import { CardPaymentComponent } from './shared/components/card-payment/card-payment.component';
 import { SaleAndCashComponent } from './shared/components/sale-and-cash/sale-and-cash.component';
+import { PreAuthCompletionComponent } from './shared/components/pre-auth-completion/pre-auth-completion.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SaleAndCashComponent } from './shared/components/sale-and-cash/sale-and
     OperatorMenuComponent,
     KeyboardComponent,
     CardPaymentComponent,
-    SaleAndCashComponent
+    SaleAndCashComponent,
+    PreAuthCompletionComponent
   ],
   imports: [
     BrowserModule,
